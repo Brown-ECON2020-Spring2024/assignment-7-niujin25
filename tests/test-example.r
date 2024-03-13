@@ -13,5 +13,5 @@ test_that("Test linear regression model", {
 test_that("Test data set", {
   expect_unique(c(year, country), data = gapminder)
   expect_range(gdpPercap, 0, 1e6, data = gapminder)
-  expect_values(continent, c("Asia", "Europe", "Africa", "Americas"), data = gapminder)
+  expect_values(continent, c("Asia", "Europe", "Africa", "Americas", "Oceania"), data = gapminder)
 })
